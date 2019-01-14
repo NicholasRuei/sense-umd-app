@@ -78,6 +78,49 @@ static navigationOptions = {
                             <Text style = {styles.forBody}>Empowering individuals and groups for action</Text>
 
                             <Text></Text>
+                    </View> 
+                        <View style = {{backgroundColor: 'purple', flex: 1, borderRadius: 10, width: '95%', alignSelf: 'center'}}>
+                        <View style={{ height: 100, justifyContent: 'center', alignItems: 'center', paddingTop: 10,}}>
+                                <Text style = {{fontFamily: 'BebasNeue', fontSize: 100}}> SENSE</Text>
+                        </View>
+                            <View style= {{flex: 1, alignItems: 'center'}}>
+                                <Text style = {styles.headerLearning}>Measurement Techniques:</Text>
+                                <Image 
+                                    style= {styles.images}
+                                    source={require('../assets/images/raspberry_pi.png')} />
+                                <Text style = {styles.forBody}>-Instrumentation</Text>
+                                <Text style = {styles.forBody}>-Electronics</Text>
+                                <Text style ={styles.forBody}>-Networking/Communicaton</Text>
+                            </View>
+                            <View style= {{flex: 1, alignItems: 'center'}}>
+                                <Text style = {styles.headerLearning}>Data Collection and Analysis:</Text>
+                                <Image 
+                                    style= {styles.images}
+                                    source={require('../assets/images/programming.png')} />
+                                <Text style = {styles.forBody}> -Python </Text>
+                                <Text style = {styles.forBody}> -C </Text>
+                                <Text style = {styles.forBody}> -Fortran </Text>
+                            </View>
+                            <View style= {{flex: 1, alignItems: 'center'}}>
+                                <Text style = {styles.headerLearning}>Modeling:</Text>
+                                <Image 
+                                    style= {styles.images}
+                                    source={require('../assets/images/co2.png')} />
+                                <Text style = {styles.forBody}>-Mesoscale atmospheric monitoring</Text>
+                                <Text style = {styles.forBody}>-Carbon cycle/chemistry models</Text>
+                                <Text style = {styles.forBody}>-Data Assimilation</Text>
+                            </View>
+                            <View style= {{flex: 1, alignItems: 'center'}}>
+                                <Text style = {styles.headerLearning}>Outreach/Management/Leadership:</Text>
+                                <Image 
+                                    style= {styles.images}
+                                    source={require('../assets/images/earth_hand.png')} />
+                                <Text style = {styles.forBody}>-Deployment and maintenance of sensor network</Text>
+                                <Text style = {styles.forBody}>-Dissemination and use of information</Text>
+                                <Text style = {styles.forBody}>-Working with K-12 students/teachers, residents, companies, colleges, and government agencies</Text>
+                            </View>
+                          
+                          
                     </View>
                 </Content>
             </Container>
@@ -113,5 +156,18 @@ const styles = StyleSheet.create({
         resizeMode: 'stretch',
         borderRadius: 10,
         overlayColor: 'white',
+    },
+    images:{
+        height: 200,
+        width: '95%',
+        resizeMode: 'contain',
+        borderRadius: 10,
+        overlayColor: 'white',
+    },
+    headerLearning:{
+        fontSize: 30,
+        paddingBottom: 20,
+        width: '90%',
+        alignSelf: 'center',
     },
 })
