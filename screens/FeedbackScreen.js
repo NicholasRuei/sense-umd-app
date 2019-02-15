@@ -13,6 +13,7 @@ import Swiper from 'react-native-swiper'
 
 
 export class FeedbackScreen extends React.Component {
+  
 
 static navigationOptions = {
     title: 'Home',
@@ -23,9 +24,6 @@ static navigationOptions = {
         fontWeight: 'bold',
         color: 'white',
     },
-    headerLeft: 
-    <Icon name = "md-menu" style = {{ color: 'white'}} />
-    ,
     headerLeftContainerStyle: {
         paddingLeft: 15
     },
@@ -37,9 +35,9 @@ static navigationOptions = {
                 <Content style={{ backgroundColor: '#d5d5d6'}}> 
                     {/*This View style is responsible for the white border that surrounds the text*/}
                     <View style= {{backgroundColor: 'white', flex: 1, borderRadius: 10, width: '95%', alignSelf: 'center'}}>
-                        <View style={{ height: 100, justifyContent: 'center', alignItems: 'center', paddingTop: 10}}>
-                            <Text style = {{fontFamily: 'BebasNeue', fontSize: 100}}> SENSE</Text>
-                        </View>
+                    <View style={{ height: 100, justifyContent: 'center', alignItems: 'center', paddingTop: 5, paddingRight: 10}}>             
+                        <Text style = {{fontSize: 80}}> SENSE</Text> 
+                    </View>
                             <Swiper
                             autoplay={true}
                             style={{height:250}}
@@ -80,8 +78,8 @@ static navigationOptions = {
                             <Text></Text>
                     </View> 
                         <View style = {{backgroundColor: 'purple', flex: 1, borderRadius: 10, width: '95%', alignSelf: 'center'}}>
-                        <View style={{ height: 100, justifyContent: 'center', alignItems: 'center', paddingTop: 10,}}>
-                                <Text style = {{fontFamily: 'BebasNeue', fontSize: 100}}> SENSE</Text>
+                        <View style={{ height: 100, justifyContent: 'center', alignItems: 'center', paddingTop: 5}}>
+                              <Text style = {{fontSize: 80}}> LEARN </Text>
                         </View>
                             <View style= {{flex: 1, alignItems: 'center'}}>
                                 <Text style = {styles.headerLearning}>Measurement Techniques:</Text>
@@ -144,7 +142,7 @@ const styles = StyleSheet.create({
     },
     forBody:{
         fontSize: 25,
-        fontFamily: 'Montserrat',
+        //fontFamily: 'Montserrat',
         width: '90%',
         alignSelf: 'center',
         borderTopWidth: 10, 
