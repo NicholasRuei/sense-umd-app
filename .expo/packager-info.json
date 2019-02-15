@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 4322,
+  "expoServerNgrokUrl": "https://jb-gze.nruei.sense-umd-app.exp.direct",
+  "packagerNgrokUrl": "https://packager.jb-gze.nruei.sense-umd-app.exp.direct",
+  "ngrokPid": 4409
 }

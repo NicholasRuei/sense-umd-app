@@ -31,27 +31,27 @@ const HomeStack = createStackNavigator({
   Home: HomeScreen,
 });
 
-HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={
-        Platform.OS === 'ios' ? 'ios-home' : 'md-home'} 
-    />
-  ),
-};
+// HomeStack.navigationOptions = {
+//   tabBarLabel: 'Home',
+//   tabBarIcon: ({ focused }) => (
+//     <TabBarIcon
+//       focused={focused}
+//       name={
+//         Platform.OS === 'ios' ? 'ios-home' : 'md-home'} 
+//     />
+//   ),
+// };
 
 const LinksStack = createStackNavigator({
   Links: LinksScreen,
 });
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'Team',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+      name={Platform.OS === 'ios' ? 'ios-people' : 'md-people'}
     />
   ),
 };
@@ -75,15 +75,15 @@ const InfoStack = createStackNavigator({
 })
 
 InfoStack.navigationOptions = {
-  tabBarLabel: 'Info',
+  tabBarLabel: 'Map',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
       //Add in ternary operator for android later on
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+          ? 'ios-map'
+          : 'md-map'
       }
     />
   ),
@@ -94,20 +94,18 @@ const FeedbackStack = createStackNavigator({
 })
 
 FeedbackStack.navigationOptions = {
-  tabBarLabel: 'Info',
+  tabBarLabel: 'Home',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      //Add in ternary operator for android later on
-      name={Platform.OS === 'ios' ? 'ios-information' : 'feedback'}
-      
+      name={
+        Platform.OS === 'ios' ? 'ios-home' : 'md-home'} 
     />
   ),
 };
 export default createBottomTabNavigator({
-  HomeStack,
-  LinksStack,
-  SettingsStack,
-  InfoStack,
   FeedbackStack,
+  LinksStack,
+  InfoStack,
+  SettingsStack,
 });
